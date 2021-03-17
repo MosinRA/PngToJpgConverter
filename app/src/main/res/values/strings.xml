@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PngToJpgConverter</string>
+    <string name="hello">Привет, ковертнем тут все?</string>
+    <string name="go_to_convert">Погнали</string>
+</resources>
