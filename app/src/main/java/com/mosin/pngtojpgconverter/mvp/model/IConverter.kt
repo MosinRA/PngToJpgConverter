@@ -7,6 +7,6 @@ interface IConverter {
     fun convert(): Completable
     fun getSourceUri(): Uri
     fun getTargetUri(): Uri
-    fun getSourceName(): String
-    fun getTargetName(): String
+    fun getSourceTextName(): String
+    fun getTargetTextName(): String
 }

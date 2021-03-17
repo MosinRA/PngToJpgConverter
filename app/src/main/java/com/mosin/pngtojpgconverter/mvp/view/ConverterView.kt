@@ -1,12 +1,23 @@
 package com.mosin.pngtojpgconverter.mvp.view
 
+import android.net.Uri
 import moxy.MvpView
-import moxy.viewstate.strategy.AddToEndSingleStrategy
-import moxy.viewstate.strategy.StateStrategyType
+import moxy.viewstate.strategy.alias.AddToEndSingle
+import moxy.viewstate.strategy.alias.OneExecution
 
-@StateStrategyType(AddToEndSingleStrategy::class)
+@AddToEndSingle
 interface ConverterView : MvpView {
-    fun init()
-    fun setImg()
-    fun setText()
+    fun setImg(data: Uri)
+    fun setText(data: String)
+    fun showProgress()
+    fun hideProgress()
+
+    @OneExecution
+    fun showSuccess()
+
+    @OneExecution
+    fun showError()
+
+    @OneExecution
+    fun showCancel()
 }
