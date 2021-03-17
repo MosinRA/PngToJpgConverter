@@ -62,7 +62,7 @@ class FragmentConverter : MvpAppCompatFragment(), ConverterView, IBackClickListe
 
     fun openFile() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
-            type = "image/jpeg"
+            type = "image/png"
             addCategory(Intent.CATEGORY_OPENABLE)
         }
         startActivityForResult(intent, OPEN_IMAGE_REQUEST_CODE)

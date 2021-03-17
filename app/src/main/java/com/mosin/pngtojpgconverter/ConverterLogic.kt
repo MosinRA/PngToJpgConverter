@@ -56,5 +56,5 @@ class ConverterLogic(private val context: Context, private val uri: Uri) : IConv
         return path
     }
 
-    override fun getTargetTextName() = getSourceTextName().substringBeforeLast(".") + ".png"
+    override fun getTargetTextName() = getSourceTextName().substringBeforeLast(".") + ".jpg"
 }
